@@ -1,6 +1,6 @@
 # Preinstall requirements from TTS 
-TTS @ git+https://github.com/developerTTS/coqui-ai-TTS
-pydantic==2.5.1
+TTS @ git+https://github.com/coqui-ai/TTS@v0.20.6
+pydantic==1.10.13
 python-multipart==0.0.6
 typing-extensions>=4.8.0
 cutlet
@@ -10,7 +10,3 @@ unidic==1.1.0
 langid
 deepspeed
 pydub
-kaleido
-cohere
-openai
-tiktoken
