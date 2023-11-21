@@ -197,16 +197,16 @@ def predict(
                 None,
                 None,
             )
-        #if len(prompt) > 200:
-        #    gr.Warning(
-        #        "Text length limited to 200 characters for this demo, please try shorter text. You can clone this space and edit code for your own usage"
-        #    )
-        #    return (
-        #        None,
-        #        None,
-        #        None,
-        #        None,
-        #    )
+        if len(prompt) > 2000000000:
+            gr.Warning(
+                "Text length limited to 200 characters for this demo, please try shorter text. You can clone this space and edit code for your own usage"
+            )
+            return (
+                None,
+                None,
+                None,
+                None,
+            )
         global DEVICE_ASSERT_DETECTED
         if DEVICE_ASSERT_DETECTED:
             global DEVICE_ASSERT_PROMPT
